@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Todo-App-with-Appwrite
 A simple and efficient to-do app built with React, Tailwind CSS, and Appwrite. It allows users to add, update, and delete tasks seamlessly.  
 
@@ -5,3 +6,13 @@ A simple and efficient to-do app built with React, Tailwind CSS, and Appwrite. I
 - Add, update, and delete tasks  
 - User-friendly UI with Tailwind CSS  
 - Backend powered by Appwrite 
+=======
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+>>>>>>> 4fc70b7 (Initial commit)
