@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { MdModeEditOutline } from "react-icons/md";
 import { MdDeleteForever } from "react-icons/md";
 import service from "../Appwrite/Config";
@@ -11,13 +11,11 @@ const IndividualTodo = ({ todos }) => {
   const [isEditing, setisEditing] = useState(false);
   const { register, handleSubmit, setValue } = useForm();
 
-  // is Editing mode
   const setUnableEdit = () => {
     setisEditing(true);
     setValue("content", todos.content);
   };
 
-  // update todo
   const updateTodo = async (data) => {
     try {
       await service.updatetodo(todos.$id, data);
@@ -28,7 +26,6 @@ const IndividualTodo = ({ todos }) => {
     }
   };
 
-  // delete todo
   const deletetodo = async () => {
     try {
       await service.deletetodo(todos.$id);

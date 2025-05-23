@@ -19,7 +19,7 @@ const TodoInput = () => {
         const tododata = await service.addtodo(data);
         if (tododata) {
           dispatch(fetchtodo());
-          reset()
+          reset();
         }
       } catch (error) {
         console.log(error);
@@ -37,7 +37,7 @@ const TodoInput = () => {
             placeholder="What’s your next task?"
             {...register("content", { required: true })}
           />
-          <span className="text-xl text-yellow-200 absolute right-4 top-[18px] text-white/50">
+          <span className="text-xl  absolute right-4 top-[18px] text-white/50">
             <GiNotebook />
           </span>
           {errors.content && (

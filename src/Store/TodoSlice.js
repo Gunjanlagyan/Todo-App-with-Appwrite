@@ -22,12 +22,12 @@ export const todoSlice = createSlice({
         builder.addCase(fetchtodo.fulfilled, (state, action) => {
             state.isLoading = false;
             state.todos = action.payload.documents;
-            console.log(action.payload.documents);
+
         });
         builder.addCase(fetchtodo.rejected, (state, action) => {
             state.error = true;
             state.isLoading = false;
-            console.log(action.payload);
+
         });
     },
 });
